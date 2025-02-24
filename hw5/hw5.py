@@ -17,6 +17,7 @@ def fetch_state_data(state_code):
     response = requests.get(url)
     if response.status_code == 200:
         return response.json()
+# I creaded a else statement so that the user could know why their statstic isn't poping up
     else:
         print(f"Error fetching data for {state_code}")
         return None
